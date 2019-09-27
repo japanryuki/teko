@@ -1,0 +1,33 @@
+*{
+    font-family: 'Teko','Noto Sans JP', sans-serif;
+}
+
+
+
+/* bootstrap override. */
+
+.navbar-brand{
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.75rem;
+    line-height: inherit;
+    white-space: nowrap;
+    color: #eefd0b;
+}
+
+.navbar-dark .navbar-brand {
+    color: #eefd0b;
+}
+
+.nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #eefd0b;
+}
+
