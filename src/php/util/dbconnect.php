@@ -6,6 +6,7 @@ try{
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     if($_POST['main'][0]!==null){
+        $array;
         foreach($_POST['format'] as $key=>$value){
             $stmt=$pdo->prepare("SELECT * FROM ? WHERE genre in(?,?,?,?,?,?,?,?) ORDER BY RANDOM() LIMIT ?;");
             $stmt->bindValue(1, $value);
@@ -20,12 +21,14 @@ try{
             $stmt->bindValue(10, $_POST['number'][0]);
             $stmt->execute();
             $result = $sth->fetchAll();
+            $array=array_merge_recursive($array, $result);
         }
+        echo json_encode($array);
     }
     elseif($_POST['sub'][0]!==null){
     
     }
-    // $stmt=$pdo->prepare("SELECT * FROM ? WHERE genre in(?,?,?,?,?,?,?,?) ORDER BY RANDOM() LIMIT ?;");
+    exit();
 }catch(PDOException $e){
 
 }
