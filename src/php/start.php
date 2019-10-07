@@ -56,6 +56,11 @@ if(isset($_POST['radio'])){
     }
 }
 
+if(isset($_POST['number_of_questions'])){
+    $n=$_POST['number_of_questions'];
+    echo "<input type=\"hidden\" class=\"number\" value=\"$n\">";
+}
+
 
 
 ?>

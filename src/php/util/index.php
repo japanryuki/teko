@@ -1,29 +1,18 @@
 <?php
 
 try{
-    var_dump($_POST);
     $pdo=new PDO('pgsql:host=localhost;port=5432;dbname=teko;user=postgres;password=1008');
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
-    $stmt=$pdo->prepare('select * from questions');
-    $stmt->execute();
-    $fetched=$stmt->fetchAll();
-    var_dump($fetched);
+    $stmt=$pdo->prepare("select * from questions where genre in(?,?,?,?,?,?,?) and questions_format in(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) order by random() limit ?");
 
-    $stmt=$pdo->prepare('select * from choices');
-    $stmt->execute();
-    $fetched=$stmt->fetchAll();
-    var_dump($fetched);
+    
 
-    $stmt=$pdo->prepare('select * from answer');
     $stmt->execute();
-    $fetched=$stmt->fetchAll();
-    var_dump($fetched);
+    $fetched1=$stmt->fetchAll();
+    
 
-    $stmt=$pdo->prepare('select * from statement');
-    $stmt->execute();
-    $fetched=$stmt->fetchAll();
-    var_dump($fetched);
+    echo json_encode($fetched1);
 
     exit();
 }catch(PDOException $e){
