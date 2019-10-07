@@ -1,8 +1,7 @@
 $(function(){
     $("#start_button").on("click",()=>{
         var obj={
-            main:[],
-            sub:[],
+            genre:[],
             format:[],
             number:[]
         };
@@ -29,7 +28,7 @@ $(function(){
 
         $.ajax({
             type: 'POST',
-            url: '../php/util/dbconnect.php',
+            url: '../php/util/index.php',
             data: obj,
         }).done(function( msg ) {
             console.log( "データ保存: " + msg );

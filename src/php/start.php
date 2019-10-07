@@ -25,7 +25,7 @@
     </div>
 
     <div id="answer-panel">
-
+    <?php echo var_dump($_POST);?>
     </div>
 
     <div id="enter">
@@ -36,38 +36,27 @@
 <div>
 <?php
 
-if(isset($_POST['main'])){
-    foreach ($_POST as $key=>$value){
-        if($key==="main"){
-            continue;
+if(isset($_POST['radio'])){
+    
+    if($_POST['radio']==='main'){
+        foreach ($_POST['genre'] as $value){
+            echo "<input type=\"hidden\" class=\"genre\" value=\"$value\">";
         }
-        if($value==="format"){
-            echo "<input type=\"hidden\" class=\"format\" value=\"$key\">";
-            continue;
+        foreach ($_POST['format'] as $value){
+            echo "<input type=\"hidden\" class=\"format\" value=\"$value\">";
         }
-        if($key==="number_of_questions"){
-            echo "<input type=\"hidden\" class=\"number\" value=\"$value\">";
-            break;
+    }
+    else if($_POST['radio']==='sub'){
+        foreach ($_POST['subGenre'] as $value){
+            echo "<input type=\"hidden\" class=\"subGenre\" value=\"$value\">";
         }
-        echo "<input type=\"hidden\" class=\"main\" value=\"$key\">";
+        foreach ($_POST['format'] as $value){
+            echo "<input type=\"hidden\" class=\"format\" value=\"$value\">";
+        }
     }
 }
-elseif(isset($_POST['sub'])){
-    foreach ($_POST as $key=>$value){
-        if($key==="sub"){
-            continue;
-        }
-        if($value==="format"){
-            echo "<input type=\"hidden\" class=\"format\" value=\"$key\">";
-            continue;
-        }
-        if($key==="number_of_questions"){
-            echo "<input type=\"hidden\" class=\"number\" value=\"$value\">";
-            break;
-        }
-        echo "<input type=\"hidden\" class=\"sub\" value=\"$key\">";
-    }
-}
+
+
 
 ?>
 </div>
