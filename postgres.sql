@@ -10,7 +10,7 @@ foreign key (questions_format) references questions_format(questions_format)
 );
 
 insert into questions(genre,sub_genre,questions_format,level) values('Entertainment','Music','Typing',3);
-insert into questions(genre,sub_genre,questions_format,level) values('Sience','Biology','Typing',2);
+insert into questions(genre,sub_genre,questions_format,level) values('Science','Biology','Typing',2);
 insert into questions(genre,sub_genre,questions_format,level) values('Comic_Animation_Game','Comic_Novel','Typing',2);
 
 insert into questions(genre,sub_genre,questions_format,level) values('Humanities','History','Effect',4);
@@ -44,13 +44,13 @@ foreign key (questions_id) references questions(questions_id),
 foreign key (choices_id) references choices(choices_id));
 
 
-insert into answer(questions_id,answer) values(1,'バラ');
-insert into answer(questions_id,answer) values(2,'よねづけんし');
+insert into answer(questions_id,answer) values(1,'よねづけんし');
+insert into answer(questions_id,answer) values(2,'バラ');
 insert into answer(questions_id,answer) values(3,'とがしよしひろ');
 insert into answer(questions_id,choices_id,answer) values(4,1,'しょくほうじだい');
-insert into answer(questions_id,choices_id,answer) values(5,1,'ふくうらかずや');
-insert into answer(questions_id,choices_id,answer) values(6,1,'ちとせからすやま');
-insert into answer(questions_id,choices_id,answer) values(7,1,'BULGARI');
+insert into answer(questions_id,choices_id,answer) values(5,2,'ふくうらかずや');
+insert into answer(questions_id,choices_id,answer) values(6,3,'ちとせからすやま');
+insert into answer(questions_id,choices_id,answer) values(7,4,'BULGARI');
 
 
 create table statement(
@@ -60,8 +60,8 @@ statement varchar(100) not null,
 foreign key (questions_id) references questions(questions_id));
 
 
-insert into statement(questions_id,statement) values(1,'リンゴは〇〇科？');
-insert into statement(questions_id,statement) values(2,'『Lemon』を歌ったのは〇〇〇〇？');
+insert into statement(questions_id,statement) values(1,'『Lemon』を歌ったのは〇〇〇〇？');
+insert into statement(questions_id,statement) values(2,'リンゴは〇〇科？');
 insert into statement(questions_id,statement) values(3,'『HUNTER*HUNTER』の作者は〇〇〇〇？');
 insert into statement(questions_id,statement) values(4,'織田信長と豊臣秀吉が生きた時代のこと');
 insert into statement(questions_id,statement) values(5,'2019年に引退した元ロッテのプロ野球選手');
@@ -89,7 +89,7 @@ create table genre(
     genre varchar(20) not null unique
 );
 
-insert into genre values (1, 'Sience');
+insert into genre values (1, 'Science');
 insert into genre values (2, 'Humanities');
 insert into genre values (3, 'Society');
 insert into genre values (4, 'LifeStyle');
@@ -104,9 +104,9 @@ create table sub_genre(
     foreign key (genre) references genre(genre)
 );
 
-insert into sub_genre values (1, 'Sience','Physics_Chemistry');
-insert into sub_genre values (2, 'Sience','Biology');
-insert into sub_genre values (3, 'Sience','Science_Others');
+insert into sub_genre values (1, 'Science','Physics_Chemistry');
+insert into sub_genre values (2, 'Science','Biology');
+insert into sub_genre values (3, 'Science','Science_Others');
 insert into sub_genre values (4, 'Humanities','History');
 insert into sub_genre values (5, 'Humanities','Language_Literature');
 insert into sub_genre values (6, 'Humanities','Humanities_Others');

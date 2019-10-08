@@ -1,58 +1,57 @@
-array(0) { }
-    array(7) { 
-        [0]=> array(10) { 
-            ["questions_id"]=> int(1) [0]=> int(1) ["genre"]=> string(13) "Entertainment" [1]=> string(13) "Entertainment" ["sub_genre"]=> string(5) "Music" [2]=> string(5) "Music" ["questions_format"]=> string(6) "Typing" [3]=> string(6) "Typing" ["level"]=> int(3) [4]=> int(3) } 
-        [1]=> array(10) { 
-            ["questions_id"]=> int(2) [0]=> int(2) ["genre"]=> string(6) "Sience" [1]=> string(6) "Sience" ["sub_genre"]=> string(7) "Biology" [2]=> string(7) "Biology" ["questions_format"]=> string(6) "Typing" [3]=> string(6) "Typing" ["level"]=> int(2) [4]=> int(2) } 
-        [2]=> array(10) { 
-            ["questions_id"]=> int(3) [0]=> int(3) ["genre"]=> string(20) "Comic_Animation_Game" [1]=> string(20) "Comic_Animation_Game" ["sub_genre"]=> string(11) "Comic_Novel" [2]=> string(11) "Comic_Novel" ["questions_format"]=> string(6) "Typing" [3]=> string(6) "Typing" ["level"]=> int(2) [4]=> int(2) } 
-        [3]=> array(10) { 
-            ["questions_id"]=> int(4) [0]=> int(4) ["genre"]=> string(10) "Humanities" [1]=> string(10) "Humanities" ["sub_genre"]=> string(7) "History" [2]=> string(7) "History" ["questions_format"]=> string(6) "Effect" [3]=> string(6) "Effect" ["level"]=> int(4) [4]=> int(4) } 
-        [4]=> array(10) { 
-            ["questions_id"]=> int(5) [0]=> int(5) ["genre"]=> string(6) "Sports" [1]=> string(6) "Sports" ["sub_genre"]=> string(8) "Baseball" [2]=> string(8) "Baseball" ["questions_format"]=> string(6) "Effect" [3]=> string(6) "Effect" ["level"]=> int(1) [4]=> int(1) } 
-        [5]=> array(10) { 
-            ["questions_id"]=> int(6) [0]=> int(6) ["genre"]=> string(7) "Society" [1]=> string(7) "Society" ["sub_genre"]=> string(9) "Geography" [2]=> string(9) "Geography" ["questions_format"]=> string(4) "Cube" [3]=> string(4) "Cube" ["level"]=> int(1) [4]=> int(1) } 
-        [6]=> array(10) { 
-            ["questions_id"]=> int(7) [0]=> int(7) ["genre"]=> string(9) "LifeStyle" [1]=> string(9) "LifeStyle" ["sub_genre"]=> string(12) "Gourmet_Life" [2]=> string(12) "Gourmet_Life" ["questions_format"]=> string(4) "Cube" [3]=> string(4) "Cube" ["level"]=> int(1) [4]=> int(1) } } 
-    
-    array(4) { 
-        [0]=> array(6) { 
-            ["choices_id"]=> int(1) [0]=> int(1) ["questions_id"]=> int(4) [1]=> int(4) ["choices"]=> string(12) "織豊時代" [2]=> string(12) "織豊時代" } 
-        [1]=> array(6) { 
-            ["choices_id"]=> int(2) [0]=> int(2) ["questions_id"]=> int(5) [1]=> int(5) ["choices"]=> string(12) "福浦和也" [2]=> string(12) "福浦和也" } 
-        [2]=> array(6) { 
-            ["choices_id"]=> int(3) [0]=> int(3) ["questions_id"]=> int(6) [1]=> int(6) ["choices"]=> string(24) "ちとせからすやま" [2]=> string(24) "ちとせからすやま" } 
-        [3]=> array(6) { 
-            ["choices_id"]=> int(4) [0]=> int(4) ["questions_id"]=> int(7) [1]=> int(7) ["choices"]=> string(7) "BULGARI" [2]=> string(7) "BULGARI" } } 
-        
-    array(7) { 
-        [0]=> array(8) { 
-            ["answer_id"]=> int(1) [0]=> int(1) ["questions_id"]=> int(1) [1]=> int(1) ["choices_id"]=> NULL [2]=> NULL ["answer"]=> string(6) "バラ" [3]=> string(6) "バラ" } 
-        [1]=> array(8) { 
-            ["answer_id"]=> int(2) [0]=> int(2) ["questions_id"]=> int(2) [1]=> int(2) ["choices_id"]=> NULL [2]=> NULL ["answer"]=> string(18) "よねづけんし" [3]=> string(18) "よねづけんし" } 
-        [2]=> array(8) { 
-            ["answer_id"]=> int(3) [0]=> int(3) ["questions_id"]=> int(3) [1]=> int(3) ["choices_id"]=> NULL [2]=> NULL ["answer"]=> string(21) "とがしよしひろ" [3]=> string(21) "とがしよしひろ" } 
-        [3]=> array(8) { 
-            ["answer_id"]=> int(4) [0]=> int(4) ["questions_id"]=> int(4) [1]=> int(4) ["choices_id"]=> int(1) [2]=> int(1) ["answer"]=> string(24) "しょくほうじだい" [3]=> string(24) "しょくほうじだい" } 
-        [4]=> array(8) { 
-            ["answer_id"]=> int(5) [0]=> int(5) ["questions_id"]=> int(5) [1]=> int(5) ["choices_id"]=> int(1) [2]=> int(1) ["answer"]=> string(21) "ふくうらかずや" [3]=> string(21) "ふくうらかずや" } 
-        [5]=> array(8) { 
-            ["answer_id"]=> int(6) [0]=> int(6) ["questions_id"]=> int(6) [1]=> int(6) ["choices_id"]=> int(1) [2]=> int(1) ["answer"]=> string(24) "ちとせからすやま" [3]=> string(24) "ちとせからすやま" } 
-        [6]=> array(8) { 
-            ["answer_id"]=> int(7) [0]=> int(7) ["questions_id"]=> int(7) [1]=> int(7) ["choices_id"]=> int(1) [2]=> int(1) ["answer"]=> string(7) "BULGARI" [3]=> string(7) "BULGARI" } } 
-        
-    array(7) { 
-        [0]=> array(6) { 
-            ["statement_id"]=> int(1) [0]=> int(1) ["questions_id"]=> int(1) [1]=> int(1) ["statement"]=> string(24) "リンゴは〇〇科？" [2]=> string(24) "リンゴは〇〇科？" } 
-        [1]=> array(6) { 
-            ["statement_id"]=> int(2) [0]=> int(2) ["questions_id"]=> int(2) [1]=> int(2) ["statement"]=> string(44) "『Lemon』を歌ったのは〇〇〇〇？" [2]=> string(44) "『Lemon』を歌ったのは〇〇〇〇？" } 
-        [2]=> array(6) { 
-            ["statement_id"]=> int(3) [0]=> int(3) ["questions_id"]=> int(3) [1]=> int(3) ["statement"]=> string(46) "『HUNTER*HUNTER』の作者は〇〇〇〇？" [2]=> string(46) "『HUNTER*HUNTER』の作者は〇〇〇〇？" } 
-        [3]=> array(6) { 
-            ["statement_id"]=> int(4) [0]=> int(4) ["questions_id"]=> int(4) [1]=> int(4) ["statement"]=> string(54) "織田信長と豊臣秀吉が生きた時代のこと" [2]=> string(54) "織田信長と豊臣秀吉が生きた時代のこと" } 
-        [4]=> array(6) { 
-            ["statement_id"]=> int(5) [0]=> int(5) ["questions_id"]=> int(5) [1]=> int(5) ["statement"]=> string(55) "2019年に引退した元ロッテのプロ野球選手" [2]=> string(55) "2019年に引退した元ロッテのプロ野球選手" } 
-        [5]=> array(6) { 
-            ["statement_id"]=> int(6) [0]=> int(6) ["questions_id"]=> int(6) [1]=> int(6) ["statement"]=> string(30) "東京都世田谷区の地名" [2]=> string(30) "東京都世田谷区の地名" } 
-        [6]=> array(6) { 
-            ["statement_id"]=> int(7) [0]=> int(7) ["questions_id"]=> int(7) [1]=> int(7) ["statement"]=> string(27) "イタリアのブランド" [2]=> string(27) "イタリアのブランド" } }
+array(3) {
+  ["genre"]=>
+  array(7) {
+    [0]=>
+    string(7) "Science"
+    [1]=>
+    string(10) "Humanities"
+    [2]=>
+    string(13) "Entertainment"
+    [3]=>
+    string(0) ""
+    [4]=>
+    string(0) ""
+    [5]=>
+    string(0) ""
+    [6]=>
+    string(0) ""
+  }
+  ["format"]=>
+  array(15) {
+    [0]=>
+    string(6) "Typing"
+    [1]=>
+    string(6) "Effect"
+    [2]=>
+    string(4) "Cube"
+    [3]=>
+    string(0) ""
+    [4]=>
+    string(0) ""
+    [5]=>
+    string(0) ""
+    [6]=>
+    string(0) ""
+    [7]=>
+    string(0) ""
+    [8]=>
+    string(0) ""
+    [9]=>
+    string(0) ""
+    [10]=>
+    string(0) ""
+    [11]=>
+    string(0) ""
+    [12]=>
+    string(0) ""
+    [13]=>
+    string(0) ""
+    [14]=>
+    string(0) ""
+  }
+  ["number"]=>
+  array(1) {
+    [0]=>
+    string(1) "5"
+  }
+}

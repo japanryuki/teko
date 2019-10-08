@@ -13,10 +13,10 @@
 
 <div class="q-wrap">
     <div id="q-info-wrap">
-        <div id="genre">Humanities</div>
-        <div id="sub">History</div>
-        <div id="format">Typing</div>
-        <div id="level">☆☆☆☆☆</div>
+        <div id="genre"></div>
+        <div id="sub"></div>
+        <div id="format"></div>
+        <div id="level"></div>
     </div>
 
     <div id="questions-wrap">
@@ -25,10 +25,9 @@
     </div>
 
     <div id="answer-panel">
-    <?php echo var_dump($_POST);?>
     </div>
 
-    <div id="enter">
+    <div id="button_wrap">
         <button type="button" id="start_button">Ready Go</button>
     </div>
 </div>
@@ -72,6 +71,7 @@ if(isset($_POST['number_of_questions'])){
 
 
 <?php require('./require/requireScript.php');?>
+<script src="../js/t.min.js"></script>
 <script src="../js/start.js"></script>
 </body>
 </html>
