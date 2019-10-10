@@ -21,13 +21,14 @@
     font-size: 1.25rem;
 }
 #questions-wrap{
-    height:250px;
+    height:220px;
 }
 #questions{
     padding:10px 16px;
     height: 100%;
     width:100%;
     position: relative;
+    font-size:1.4rem;
 }
 .ready{
     position: absolute;
@@ -38,8 +39,18 @@
 }
 #answer-panel{
     border:none;
-    height:180px;
+    height:240px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
+.choices{
+    margin:6px 0; 
+    padding:0 30px;
+}
+
 #button_wrap{
     width:20%;
     border:none;

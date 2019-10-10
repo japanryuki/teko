@@ -25,6 +25,7 @@
     </div>
 
     <div id="answer-panel">
+        
     </div>
 
     <div id="button_wrap">
