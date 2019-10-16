@@ -46,6 +46,14 @@
     justify-content: center;
 }
 
+.q-choices{
+    font-size: 3rem;
+    position: absolute;
+    top:60%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
 .choices{
     margin:6px 0; 
     padding:0 30px;
@@ -57,7 +65,7 @@
     margin:8px auto 20px;
 }
 
-#button_wrap>button{
+#modal-submit,#button_wrap>button{
     width:100%;
     font-size: 1.5rem;
     border-radius: 1em;
@@ -86,4 +94,29 @@
     top:50%;
     left:50%;
     transform: translate(-50%,-50%);
+}
+
+/* modal */
+
+.modal{
+    display: none;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.modal__bg{
+    background: rgba(0,0,0,0.8);
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+}
+.modal__content{
+    background: #fff;
+    left: 50%;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
 }

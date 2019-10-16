@@ -1,0 +1,38 @@
+.result-wrap{
+    display: flex;
+    border:1px solid black;
+    margin:24px auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width:80%;
+}
+
+.result{
+    font-size: 1.5rem;
+    margin:0 8px;
+    flex-basis:30%;
+}
+
+.a-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.a-wrap{
+    border:none;
+}
+
+a{
+    width:100%;
+    font-size: 1.5rem;
+    border-radius: 1em;
+    color: #eefd0b;
+    background-color: #343a40;
+    border: none;
+    cursor: pointer;
+    padding:4px;
+}
+
+a:hover{
+    background-color: #555c63;
+}

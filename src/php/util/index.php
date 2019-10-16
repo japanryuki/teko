@@ -54,7 +54,7 @@ try{
                 $stmt=$pdo->prepare("select answer from answer where questions_id=?");
                 $stmt->bindValue(1,intval($arr['questions_id']));
                 $stmt->execute();
-                $fetchedA=$stmt->fetchAll();
+                $fetchedA=$stmt->fetch();
                 break;
 
                 default:

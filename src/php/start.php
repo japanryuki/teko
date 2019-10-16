@@ -33,7 +33,7 @@
     </div>
 </div>
 
-<div>
+<div id="hidden">
 <?php
 
 if(isset($_POST['radio'])){
@@ -65,6 +65,15 @@ if(isset($_POST['number_of_questions'])){
 
 ?>
 </div>
+
+<div class="modal js-modal">
+    <div class="modal__bg js-modal-close"></div>
+        <div class="modal__content">
+            <form action="result.php" method="post">
+                <input type="submit" id="modal-submit" value="Loading Results...">
+            </form>
+        </div><!--modal__inner-->
+</div><!--modal-->
 
 <?php else:?>
 <div class="access_error"><p>The access is invalid!!!<br>Do not access this page directly!!!</p></div>
