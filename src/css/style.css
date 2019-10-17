@@ -2,6 +2,26 @@
     font-family: 'Teko','Noto Sans JP', sans-serif;
 }
 
+footer{
+    margin:20px 0 0;
+}
+
+footer > div{
+    border-top:1px solid grey;
+    border-bottom:1px solid grey;
+    width:90%;
+    margin:0 auto;
+    position: relative;
+    height:150px;
+}
+
+footer > div > span{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
 
 
 /* bootstrap override. */

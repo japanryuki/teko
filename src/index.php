@@ -193,7 +193,7 @@
                 <div>
                     <h3>Number of questions</h3>
                     <p>※Please specify the number of questions in the range of 1 to 28.</p>
-                    <input type="number" name="number_of_questions" min="1" max="28">
+                    <input type="tel" name="number_of_questions" maxlength="2">
                 </div>
                 <div style="width:18%;margin:0 auto;">
                     <input type="submit" name="started" value="Started" class="started">          

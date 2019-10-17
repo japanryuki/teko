@@ -1,7 +1,7 @@
 $(function(){
-    $(".nav-link").on("click",(e)=>{
+    $("body").ready(()=>{
         $(".nav-link.active").removeClass("active");
-        $(e.target).addClass("active");
+        $(".nav-link").eq(0).addClass("active");
     })
 
     $("input[type='radio']").on("click",(e)=>{
