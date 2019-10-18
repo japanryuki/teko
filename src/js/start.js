@@ -1,5 +1,5 @@
 $(function(){
-    $("#start_button").on("click",()=>{
+    $("#start_button").on("click touchstart",()=>{
         var obj={
             genre:[],
             sub_genre:[],
@@ -40,6 +40,7 @@ $(function(){
             quiz_start(JSON.parse(msg));
         });
     });
+    
 
     function quiz_start(json){
         window.json=json;
@@ -58,7 +59,7 @@ $(function(){
             },1000);
         },2000);
 
-        $('.enter').on('click',(e)=>{
+        $('.enter').on('click touchstart',(e)=>{
             SuccessOrFailure();
             setTimeout(()=>{
                 propose(window.json)

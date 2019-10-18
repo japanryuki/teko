@@ -4,15 +4,15 @@ $(function(){
         $(".nav-link").eq(1).addClass("active");
     })
 
-    $(".modal-button").on("click",()=>{
+    $(".modal-button").on("click touchstart",()=>{
         $(".js-modal").fadeIn();
     })
 
-    $(".modal").on("click",()=>{
+    $(".modal").on("click touchstart",()=>{
         $(".js-modal").fadeOut();
     })
 
-    $(".plus-button").on("click",()=>{
+    $(".plus-button").on("click touchstart",()=>{
         var len=$("input[name='answer']").length;
         len++;
         $(".form-group").last().after("<div class=\"form-group\"><label for=\"choices"+len+"\">Choices"+len+"</label><input type=\"text\" class=\"form-control\" id=\"choices"+len+"\" placeholder=\"\" name=\"choices\"></div><div class=\"form-group\"><label for=\"answer"+len+"\">Answer"+len+"</label><input type=\"text\" class=\"form-control\" id=\"answer"+len+"\" placeholder=\"\" name=\"answer\"></div>");
@@ -67,7 +67,7 @@ $(function(){
         }
     })
 
-    $(".create").on("click",()=>{
+    $(".create").on("click touchstart",()=>{
         var flg=false;
         var obj={
             genre:[],

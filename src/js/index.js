@@ -4,7 +4,7 @@ $(function(){
         $(".nav-link").eq(0).addClass("active");
     })
 
-    $("input[type='radio']").on("click",(e)=>{
+    $("input[type='radio']").on("click touchstart",(e)=>{
         var eObj = $(e.target);
         if(!(eObj.hasClass("disabled"))){
             return;
