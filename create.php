@@ -2,15 +2,15 @@
 <html lang="ja">
 <head>
 
-<?php require('./php/require/requireHead.php');?>
-<link rel="stylesheet" href="./css/style.css">
-<link rel="stylesheet" href="./css/create.css">
+<?php require('./src/php/require/requireHead.php');?>
+<link rel="stylesheet" href="./src/css/style.css">
+<link rel="stylesheet" href="./src/css/create.css">
 </head>
 <body>
-<?php require('./php/require/header.php');?>
+<?php require('./src/php/require/header.php');?>
 
 <div class="form-wrap">
-    <!-- <form action="./php/util/create.php" method="post"> -->
+    <!-- <form action="./src/php/util/create.php" method="post"> -->
     <div class="modal-button">※入力フィールドの使い方を見るにはここをクリックしてください。</div>
     <div class="form-group">
         <label for="genre">Genre</label>
@@ -147,9 +147,9 @@
         </div><!--modal__inner-->
 </div><!--modal-->
 
-<?php require('./php/require/footer.php');?>
+<?php require('./src/php/require/footer.php');?>
     
-<?php require('./php/require/requireScript.php');?>
-<script src="./js/create.js"></script>
+<?php require('./src/php/require/requireScript.php');?>
+<script src="./src/js/create.js"></script>
 </body>
 </html>
