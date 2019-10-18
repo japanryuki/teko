@@ -2,16 +2,16 @@
 <html lang="ja">
 <head>
 
-<?php require('./src/php/require/requireHead.php');?>
-<link rel="stylesheet" href="./src/css/style.css">
-<link rel="stylesheet" href="./src/css/index.css">
+<?php require('./php/require/requireHead.php');?>
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-<?php require('./src/php/require/header.php');?>
+<?php require('./php/require/header.php');?>
     
     <main>
         <div>
-            <form action="./src/php/start.php" method="POST">
+            <form action="./php/start.php" method="POST">
                 <input type="radio" id="main-radio" checked="checked" value="main" name="radio">
                 <label class="form-desc-label" for="main-radio" id="GenreLabel">Genre</label>
                 <div class="gf-wrap" id="main-gf-wrap">
@@ -202,9 +202,9 @@
         </div>
     </main>
 
-<?php require('./src/php/require/footer.php');?>
+<?php require('./php/require/footer.php');?>
     
-<?php require('./src/php/require/requireScript.php');?>
-<script src="./src/js/index.js"></script>
+<?php require('./php/require/requireScript.php');?>
+<script src="./js/index.js"></script>
 </body>
 </html>
