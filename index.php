@@ -205,6 +205,6 @@
 <?php require('./src/php/require/footer.php');?>
     
 <?php require('./src/php/require/requireScript.php');?>
-<script src="./src/js/index.js"></script>
+<script src="./srjs/index.js"></script>
 </body>
 </html>

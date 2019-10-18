@@ -1,8 +1,12 @@
 <?php
 try{
-    $pdo=new PDO('pgsql:host=localhost;port=5432;dbname=teko;user=postgres;password=1008');
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    // $pdo=new PDO('pgsql:host=localhost;port=5432;dbname=teko;user=postgres;password=1008');
+    // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $url = parse_url(getenv('DATABASE_URL'));
 
+    $dsn = sprintf('pgsql:host=%s;dbname=%s', $url['host'], substr($url['path'], 1));
+
+    $pdo = new PDO($dsn, $url['user'], $url['pass']);
     // echo var_dump($_POST);
 
     $stmt=$pdo->prepare("insert into questions(genre,sub_genre,questions_format,level) values(?,?,?,?) RETURNING questions_id");

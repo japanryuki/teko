@@ -1,7 +1,12 @@
 <?php
 try{
-    $pdo=new PDO('pgsql:host=localhost;port=5432;dbname=teko;user=postgres;password=1008');
-    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    // $pdo=new PDO('pgsql:host=localhost;port=5432;dbname=teko;user=postgres;password=1008');
+    // $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    $url = parse_url(getenv('DATABASE_URL'));
+
+    $dsn = sprintf('pgsql:host=%s;dbname=%s', $url['host'], substr($url['path'], 1));
+
+    $pdo = new PDO($dsn, $url['user'], $url['pass']);
     
     if(isset($_REQUEST['genre'])){
         $stmt=$pdo->prepare("select * from questions where genre in(?,?,?,?,?,?,?) and questions_format in(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?) order by random() limit ?");
