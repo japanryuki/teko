@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="../css/start.css">
 </head>
 <body>
-<?php require('./require/header.php');?>
     
 <?php if(isset($_POST)):?>
 

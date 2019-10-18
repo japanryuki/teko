@@ -50,6 +50,7 @@ $(function(){
             $('#start_button').text("ENTER");
             $('#start_button').addClass("enter");
             $('#start_button').off("click");
+            $('#start_button').off("touchstart");
         }
         $('#questions').html('<div class="ready">Ready...</div>');
         setTimeout(()=>{

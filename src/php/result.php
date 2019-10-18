@@ -7,7 +7,6 @@
 <link rel="stylesheet" href="../css/result.css">
 </head>
 <body>
-<?php require('./require/header.php');?>
 
 <?php
 foreach($_POST as $value){
