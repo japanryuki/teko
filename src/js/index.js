@@ -1,10 +1,11 @@
 $(function(){
+    var clickEventType=((window.ontouchstart!==null)?'click':'touchstart');
     $("body").ready(()=>{
         $(".nav-link.active").removeClass("active");
         $(".nav-link").eq(0).addClass("active");
     })
 
-    $("input[type='radio']").on("click touchstart",(e)=>{
+    $("input[type='radio']").on(clickEventType,(e)=>{
         var eObj = $(e.target);
         if(!(eObj.hasClass("disabled"))){
             return;

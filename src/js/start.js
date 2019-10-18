@@ -1,5 +1,6 @@
 $(function(){
-    $("#start_button").on("click touchstart",()=>{
+    var clickEventType=((window.ontouchstart!==null)?'click':'touchstart');
+    $("#start_button").on(clickEventType,()=>{
         var obj={
             genre:[],
             sub_genre:[],
@@ -49,8 +50,8 @@ $(function(){
         if(!($('#start_button').hasClass("enter"))){
             $('#start_button').text("ENTER");
             $('#start_button').addClass("enter");
-            $('#start_button').off("click");
-            $('#start_button').off("touchstart");
+            $('#start_button').off(clickEventType);
+            
         }
         $('#questions').html('<div class="ready">Ready...</div>');
         setTimeout(()=>{
@@ -60,7 +61,7 @@ $(function(){
             },1000);
         },2000);
 
-        $('.enter').on('click touchstart',(e)=>{
+        $('.enter').on(clickEventType,(e)=>{
             SuccessOrFailure();
             setTimeout(()=>{
                 propose(window.json)

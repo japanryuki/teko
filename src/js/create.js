@@ -1,18 +1,19 @@
 $(function(){
+    var clickEventType=((window.ontouchstart!==null)?'click':'touchstart');
     $("body").ready(()=>{
         $(".nav-link.active").removeClass("active");
         $(".nav-link").eq(1).addClass("active");
     })
 
-    $(".modal-button").on("click touchstart",()=>{
+    $(".modal-button").on(clickEventType,()=>{
         $(".js-modal").fadeIn();
     })
 
-    $(".modal").on("click touchstart",()=>{
+    $(".modal").on(clickEventType,()=>{
         $(".js-modal").fadeOut();
     })
 
-    $(".plus-button").on("click touchstart",()=>{
+    $(".plus-button").on(clickEventType,()=>{
         var len=$("input[name='answer']").length;
         len++;
         $(".form-group").last().after("<div class=\"form-group\"><label for=\"choices"+len+"\">Choices"+len+"</label><input type=\"text\" class=\"form-control\" id=\"choices"+len+"\" placeholder=\"\" name=\"choices\"></div><div class=\"form-group\"><label for=\"answer"+len+"\">Answer"+len+"</label><input type=\"text\" class=\"form-control\" id=\"answer"+len+"\" placeholder=\"\" name=\"answer\"></div>");
