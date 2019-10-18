@@ -53,7 +53,7 @@ foreach($_POST as $value){
     <a href="javascript:history.back();">Again</a>
     </div>
     <div class="a-wrap">
-        <a href="../index.php">Back To Top</a>
+        <a href="../../index.php">Back To Top</a>
     </div>
 </div>
 <?php require('./require/requireScript.php');?>
